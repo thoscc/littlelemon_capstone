@@ -1,5 +1,5 @@
-export default function Main(props) {
+export default function Main() {
     return (
-        <main>{props.children}</main>
+        <main>HomePage</main>
     );
 }

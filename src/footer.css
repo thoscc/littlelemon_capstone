@@ -1,8 +1,10 @@
-nav ul {
+footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
 
+footer section ul {
     list-style-type: none;
     padding-left: 0;
 }

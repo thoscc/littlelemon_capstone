@@ -1,7 +1,7 @@
 import logo from "./assets/Logo.svg"
-import "./Nav.css"
+import "./nav.css"
 
-export default function Nav(props) {
+export default function Nav() {
     return (
         <nav>
             <ul>
