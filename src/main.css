@@ -1,0 +1,11 @@
+main {
+    display: flex;
+    background-color: #495E57;
+    height: 300px;
+}
+
+#heroImg {
+    width: 250px;
+    height: 300px;
+    border-radius: 5%;
+}

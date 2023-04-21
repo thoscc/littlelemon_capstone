@@ -1,4 +1,4 @@
-import logo from "./assets/Logo.svg"
+import navImg from "./assets/nav.svg"
 import "./nav.css"
 
 export default function Nav() {
@@ -6,7 +6,7 @@ export default function Nav() {
         <nav>
             <ul>
                 <li>
-                    <img src={logo} alt="Little Lemon Logo"/>
+                    <img src={navImg} alt="Little Lemon Logo"/>
                 </li>
 
                 <li>
