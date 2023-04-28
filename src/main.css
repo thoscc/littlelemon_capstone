@@ -1,11 +1,44 @@
-main {
+#hero {
     display: flex;
+    justify-content: center;
     background-color: #495E57;
-    height: 300px;
+}
+
+#ribbon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 650px;
+    margin-top: 80px;
 }
 
 #heroImg {
-    width: 250px;
+    width: 300px;
     height: 300px;
-    border-radius: 5%;
+    position: relative;
+    top: 40px;
+    left: 165px;
+    border-radius: 10px;
+}
+
+#button {
+    background-color: #F4CE14;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: medium;
+    height: 50px;
+    width: 200px;
+}
+
+#button:hover {
+    background-color: black;
+    color: #F4CE14;
+}
+
+#dishes {
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+    margin-top: 50px;
 }

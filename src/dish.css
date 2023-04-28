@@ -1,0 +1,30 @@
+.dish {
+    display: flex;
+    flex-direction: column;
+    background-color: #EDEFEE;
+    border-radius: 10px;
+    height: 520px;
+    width: 310px;
+}
+
+.dishImg {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+}
+
+.dishInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dishDelivery {
+    display: flex;
+    margin-left: 10px;
+}
+
+.dishDeliveryImg {
+    position: relative;
+    left: 10px;
+    top: 4px;
+}

@@ -4,7 +4,7 @@ import greekSaladImg from "./assets/greekSalad.jpg"
 import bruschettaImg from "./assets/bruschetta.svg"
 import lemonDessertImg from "./assets/lemonDessert.jpg"
 
-import Card from "./Card"
+import Dish from "./Dish"
 
 import "./main.css"
 
@@ -33,27 +33,34 @@ export default function Main() {
 
     const dishes = dishesData.map((dish) => {
         return (
-            <Card key={dish.title} img={dish.img} title={dish.title} price={dish.price} desc={dish.desc} />
+            <Dish key={dish.title} img={dish.img} title={dish.title} price={dish.price} desc={dish.desc} />
         );
     });
 
     return (
         <main>
-            <article>
-                <h1 id="heroTitle" class="hero">Little Lemon</h1>
-                <article>
-                    <h2 id="heroSubTitle" class="hero">Chicago</h2>
-                    <p class="hero">We are a family owned Mediterranea, restaurant, focused on traditional recipes served with a modern twist.</p>
-                    <button id="heroButton">Reserve a Table</button>
-                    <img id="heroImg" src={heroImg} alt="Little Lemon Restaurant Hero Section"/>
-                </article>
+            <div id="hero">
+                <div style={{position: "relative", right: "165px"}}>
+                    <h1 style={{color: "#F4CE14"}}>Little Lemon</h1>
+                    <h2 style={{color: "white"}}>Chicago</h2>
+                    <p style={{color: "white", fontStyle: "italic", width: "500px"}}>We are a family owned Mediterranean restaraunt, focused on traditional recipes served with a modern twist.</p>
+                    <button id="button">Reserve a table</button>
+                </div>
 
-                <article>
-                    <h1 id="highlightsSubTitle">This weeks specials!</h1>
-                    <button id="highlightsButton">Online Menu</button>
-                    <div> {dishes} </div>
-                </article>
-            </article>
+                <div>
+                    <img id="heroImg" src={heroImg} alt="Hero Img" />
+                </div>
+
+            </div>
+
+            <div id="ribbon">
+                <h1>This week specials!</h1>
+                <button id="button">Online Menu</button>
+            </div>
+
+            <div id="dishes">
+                {dishes}
+            </div>
         </main>
     );
 }
