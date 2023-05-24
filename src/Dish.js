@@ -2,7 +2,7 @@ import { MdDeliveryDining } from "react-icons/md"
 
 import "./dish.css"
 
-export default function Dish({key, img, title, price, desc}) {
+export default function Dish({img, title, price, desc}) {
     return (
         <div className="dish">
             <img className="dishImg" src={img} alt={title} />
